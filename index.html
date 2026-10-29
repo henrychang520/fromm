@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<!-- morcept-design: layout=catalog; motion=draw -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FROMM 富朗包裝｜瑞士打包機、裹膜機、緩衝氣墊機、封箱機</title>
+<meta name="description" content="瑞士 FROMM 富朗包裝：手提式打包機、棧板裹膜機、緩衝氣墊機、封箱機與全自動包裝流水線。台中、桃園、高雄就近服務，0800-373777。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{red:{DEFAULT:'#e30613',dk:'#b8040f',lt:'#fde8e9'},ink:'#222222',paper:'#f4f4f4',steel:'#5b5f63'},fontFamily:{sans:['"Noto Sans TC"','sans-serif'],num:['Archivo','"Noto Sans TC"','sans-serif']},maxWidth:{wrap:'1310px'}}}}
+</script>
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<style>
+html{scroll-behavior:auto}
+body{background:#f4f4f4;color:#222;caret-color:#e30613;-webkit-font-smoothing:antialiased}
+::selection{background:#e30613;color:#fff}
+:focus-visible{outline:2px solid #e30613;outline-offset:3px;border-radius:4px}
+a{text-underline-offset:.25em}
+table{font-variant-numeric:tabular-nums}
+.cond{font-family:Archivo,"Noto Sans TC",sans-serif;font-stretch:72%;letter-spacing:-.01em}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.4rem;border-radius:999px;font-weight:700;font-size:.95rem;transition:transform .18s cubic-bezier(.23,1,.32,1),background-color .2s,color .2s,box-shadow .2s}
+.btn:active,.press:active{transform:scale(.97)}
+.btn-red{background:#e30613;color:#fff}
+.btn-ink{background:#222;color:#fff}
+.btn-line{border:1.5px solid #222;color:#222}
+.btn-flow{background:linear-gradient(110deg,#e30613,#a3030d,#222,#e30613);background-size:300% 100%;color:#fff;animation:flow 8s ease-in-out infinite}
+@keyframes flow{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+.bounce{animation:bob 1.6s cubic-bezier(.23,1,.32,1) infinite}
+@keyframes floaty{0%,100%{transform:translateY(0) rotate(-8deg)}50%{transform:translateY(-14px) rotate(-4deg)}}
+.floaty{animation:floaty 6s ease-in-out infinite}
+.caret::after{content:"";display:inline-block;width:2px;height:1em;background:#e30613;margin-left:3px;vertical-align:-.12em;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+@media (hover:hover) and (pointer:fine){
+ .btn-red:hover{background:#b8040f;box-shadow:0 10px 24px -12px rgba(227,6,19,.7)}
+ .btn-ink:hover{background:#000}
+ .btn-line:hover{background:#222;color:#fff}
+ .nav-a:hover{color:#e30613}
+ .row-h:hover{background:#fff}
+ .row-h:hover .arr{transform:translateX(4px);color:#e30613}
+ .card-h:hover img{transform:scale(1.04)}
+ .card-h:hover{box-shadow:0 18px 36px -20px rgba(0,0,0,.35)}
+ .fab a:hover{background:#e30613;color:#fff}
+ .tab:hover{color:#e30613}
+ .lnk:hover{color:#e30613;text-decoration:underline}
+}
+.arr{transition:transform .2s cubic-bezier(.23,1,.32,1),color .2s}
+.card-h img{transition:transform .6s cubic-bezier(.23,1,.32,1)}
+.card-h{transition:box-shadow .25s}
+.nav-a{transition:color .15s;position:relative}
+.nav-a.on{color:#e30613}
+.nav-a.on::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:#e30613}
+#hdr{transition:padding .25s cubic-bezier(.23,1,.32,1),box-shadow .25s}
+#hdr.small{padding-top:.4rem;padding-bottom:.4rem;box-shadow:0 10px 30px -18px rgba(0,0,0,.35)}
+#hdr .logo{transition:height .25s}
+#hdr.small .logo{height:34px}
+.tab.on{color:#e30613;border-color:#e30613}
+.chip{border:1.5px solid #cfcfcf;border-radius:999px;padding:.4rem .95rem;font-size:.9rem;transition:all .18s}
+.chip.on{background:#222;color:#fff;border-color:#222}
+.acc-b{display:grid;grid-template-rows:0fr;transition:grid-template-rows .25s cubic-bezier(.23,1,.32,1)}
+.acc.open .acc-b{grid-template-rows:1fr}
+.acc.open .acc-i{transform:rotate(45deg);color:#e30613}
+.acc-i{transition:transform .2s}
+.label-tag{font-family:Archivo,sans-serif;font-stretch:80%;letter-spacing:.06em;font-size:.72rem;font-weight:700}
+input,select,textarea{width:100%;background:#fff;border:1.5px solid #d6d6d6;border-radius:8px;padding:.75rem .9rem;font-size:.95rem;transition:border-color .15s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:#e30613}
+.modal{position:fixed;inset:0;z-index:80;display:none;background:rgba(20,20,20,.7);padding:1rem;overflow:auto}
+.modal.show{display:flex;align-items:flex-start;justify-content:center}
+.strap{background:repeating-linear-gradient(90deg,#e30613 0 64px,#c4050f 64px 66px)}
+.sheet-grid{background-image:linear-gradient(#e2e2e2 1px,transparent 1px);background-size:100% 3.25rem}
+</style>
+</head>
+<body class="font-sans">
+
+<!-- Header -->
+<header id="hdr" class="fixed top-0 inset-x-0 z-50 bg-white/95 border-b border-neutral-200 py-3">
+ <div class="max-w-wrap mx-auto px-5 flex items-center justify-between gap-6">
+  <a href="#home" class="press shrink-0" aria-label="富朗包裝首頁"><img class="logo h-11 w-auto" src="https://fromm-pack.com.tw/wp-content/uploads/2023/03/FROMM富朗中字-LOGO.png" alt="FROMM 富朗包裝 Logo"></a>
+  <nav class="hidden xl:flex items-center gap-5 text-[.92rem] font-medium" id="nav"></nav>
+  <div class="flex items-center gap-3">
+   <a href="tel:0800373777" class="hidden md:inline-flex items-center gap-2 font-num font-bold text-sm press"><i data-lucide="phone" class="w-4 h-4 text-red"></i>0800-373777</a>
+   <button id="burger" class="xl:hidden p-2 press" aria-label="開啟選單"><i data-lucide="menu"></i></button>
+  </div>
+ </div>
+ <div id="mnav" class="hidden xl:hidden border-t border-neutral-200 bg-white"><div class="max-w-wrap mx-auto px-5 py-3 grid grid-cols-2 gap-1 text-[.95rem]" id="mnavIn"></div></div>
+</header>
+
+<!-- Right floating icons -->
+<div class="fab fixed right-3 top-1/2 -translate-y-1/2 z-40 flex flex-col gap-2">
+ <a href="https://line.me/" target="_blank" rel="noopener" class="press w-11 h-11 rounded-full bg-white text-ink grid place-items-center shadow-[0_10px_30px_-12px_rgba(0,0,0,.4)] transition-colors" aria-label="LINE 線上諮詢"><i data-lucide="message-circle" class="w-5 h-5"></i></a>
+ <a href="tel:0800373777" class="press w-11 h-11 rounded-full bg-white text-ink grid place-items-center shadow-[0_10px_30px_-12px_rgba(0,0,0,.4)] transition-colors" aria-label="撥打 0800-373777"><i data-lucide="phone" class="w-5 h-5"></i></a>
+ <a href="#contact" class="press w-11 h-11 rounded-full bg-red text-white grid place-items-center shadow-[0_10px_30px_-12px_rgba(227,6,19,.6)] transition-colors" aria-label="詢價試機"><i data-lucide="file-text" class="w-5 h-5"></i></a>
+</div>
+
+<main class="pt-[72px]">
+
+<!-- ================= HOME ================= -->
+<section data-page="home">
+ <!-- Hero: index -->
+ <div class="relative overflow-hidden bg-paper">
+  <div class="max-w-wrap mx-auto px-5 pt-14 lg:pt-20 pb-16 grid lg:grid-cols-12 gap-10 items-start">
+   <div class="lg:col-span-6 relative">
+    <h1 class="hero-h text-[2.6rem] sm:text-6xl lg:text-[4.6rem] font-black leading-[1.08] tracking-[-0.02em]"><span class="block">出貨的最後一公尺，</span><span class="block">交給瑞士來<span class="text-red">綁緊</span>。</span></h1>
+    <p class="hero-p mt-6 text-lg text-steel max-w-xl leading-relaxed">FROMM 富朗包裝，瑞士創立七十餘年的包裝設備集團。手提式打包機、棧板裹膜機、緩衝氣墊機到封箱機，一個品牌配齊整條出貨線。</p>
+    <p class="hero-p mt-5 text-base font-bold">現在主打：<span id="typing" class="text-red caret"></span></p>
+    <div class="hero-p mt-8 flex flex-wrap gap-3">
+     <a href="#products" class="btn btn-flow press">看產品型錄 <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+     <a href="#contact" class="btn btn-line press">預約試機</a>
+    </div>
+    <div class="floaty hidden lg:grid absolute -right-4 top-2 w-28 h-28 rounded-full bg-red text-white place-items-center text-center shadow-[0_14px_30px_-14px_rgba(227,6,19,.8)]">
+     <div><div class="cond font-num font-black text-3xl leading-none">70<span class="text-xl">+</span></div><div class="text-[.7rem] mt-1 font-bold">年 瑞士品牌</div></div>
+    </div>
+   </div>
+   <div class="lg:col-span-6 bg-white rounded-xl shadow-[0_24px_50px_-30px_rgba(0,0,0,.35)] overflow-hidden">
+    <div class="flex items-center justify-between px-5 py-3 bg-ink text-white">
+     <span class="label-tag">FROMM PRODUCT INDEX</span><span class="text-xs text-neutral-300">點選分類直接進型錄</span>
+    </div>
+    <ul id="heroIndex" class="divide-y divide-neutral-200"></ul>
+   </div>
+  </div>
+  <div class="strap h-3 hero-strap"></div>
+  <a href="#finder" data-scroll="finder" class="absolute left-1/2 -translate-x-1/2 bottom-6 hidden md:flex flex-col items-center text-xs text-steel press" aria-label="往下看選機工具"><span>選機工具</span><i data-lucide="chevron-down" class="bounce w-5 h-5 text-red"></i></a>
+ </div>
+
+ <!-- Finder tabs (old site search tool) -->
+ <div id="finder" class="bg-white">
+  <div class="max-w-wrap mx-auto px-5 py-20 grid lg:grid-cols-12 gap-10">
+   <div class="lg:col-span-4" data-reveal>
+    <h2 class="text-3xl md:text-4xl font-black leading-tight">不知道該選哪台？<br>先回答三個問題。</h2>
+    <p class="mt-4 text-steel leading-relaxed">把手邊的耗材、棧板尺寸或貨物重量告訴我們，系統先幫您縮小範圍，業務再依現場給建議。</p>
+   </div>
+   <div class="lg:col-span-8" data-reveal>
+    <div class="flex gap-6 border-b border-neutral-200" role="tablist" id="ftabs">
+     <button class="tab on press pb-3 border-b-2 border-transparent font-bold" data-t="0">搜索打包機</button>
+     <button class="tab press pb-3 border-b-2 border-transparent font-bold" data-t="1">搜索裹膜機</button>
+     <button class="tab press pb-3 border-b-2 border-transparent font-bold" data-t="2">搜索緩衝氣墊</button>
+    </div>
+    <div class="fpanel pt-6 space-y-5" data-p="0">
+     <div><div class="text-sm font-bold mb-2">目前使用的耗材</div><div class="flex flex-wrap gap-2 chips"><button class="chip on press">PET 塑鋼帶</button><button class="chip press">PP 打包帶</button><button class="chip press">鋼帶</button></div></div>
+     <div><div class="text-sm font-bold mb-2">耗材寬度（mm）</div><div class="flex flex-wrap gap-2 chips font-num"><button class="chip press">16</button><button class="chip on press">19</button><button class="chip press">25</button><button class="chip press">32</button></div></div>
+     <div><div class="text-sm font-bold mb-2">希望的工具形式</div><div class="flex flex-wrap gap-2 chips"><button class="chip press">手動</button><button class="chip press">氣動</button><button class="chip on press">電動</button></div></div>
+    </div>
+    <div class="fpanel pt-6 space-y-5 hidden" data-p="1">
+     <div><div class="text-sm font-bold mb-2">棧板尺寸（cm）</div><div class="flex flex-wrap gap-2 chips font-num"><button class="chip press">100 × 100</button><button class="chip on press">110 × 110</button><button class="chip press">110 × 120</button><button class="chip press">120 × 120</button></div></div>
+     <div><div class="text-sm font-bold mb-2">希望的工具形式</div><div class="flex flex-wrap gap-2 chips"><button class="chip on press">固定式</button><button class="chip press">平行裹包式</button><button class="chip press">手推式</button><button class="chip press">移動式</button></div></div>
+    </div>
+    <div class="fpanel pt-6 space-y-5 hidden" data-p="2">
+     <div><div class="text-sm font-bold mb-2">單件重量</div><div class="flex flex-wrap gap-2 chips"><button class="chip on press">1–20 kg</button><button class="chip press">20 kg 以上</button></div></div>
+     <div><div class="text-sm font-bold mb-2">運輸方式</div><div class="flex flex-wrap gap-2 chips"><button class="chip on press">2–3 天國內運輸</button><button class="chip press">國際運輸（海空運）</button></div></div>
+    </div>
+    <div class="mt-8 flex flex-wrap items-center gap-4">
+     <button id="fgo" class="btn btn-red press"><i data-lucide="search" class="w-4 h-4"></i>顯示建議機型</button>
+     <span id="fres" class="text-sm text-steel"></span>
+    </div>
+   </div>
+  </div>
+ </div>
+
+ <!-- Featured: P328S -->
+ <div class="bg-paper">
+  <div class="max-w-wrap mx-auto px-5 py-20 grid lg:grid-cols-12 gap-10 items-center">
+   <div class="lg:col-span-7 relative" data-reveal>
+    <img src="https://fromm-pack.com.tw/wp-content/uploads/2022/11/S-Series-8.jpg" alt="FROMM 塑鋼帶電動打包機 P328S 彩色觸控螢幕" class="w-full rounded-xl bg-white aspect-[4/3] object-contain">
+    <button class="vbtn press absolute left-5 bottom-5 btn btn-ink" data-v="P328S 實機操作"><i data-lucide="play" class="w-4 h-4"></i>看實機操作 1 分鐘</button>
+   </div>
+   <div class="lg:col-span-5" data-reveal>
+    <span class="label-tag text-red">NEW · P328S / P329S</span>
+    <h2 class="mt-3 text-3xl md:text-[2.6rem] font-black leading-tight">彩色觸控螢幕，<br>拉力值看得見。</h2>
+    <p class="mt-5 text-steel leading-relaxed">比市面上的電動打包機更聰明、更安全：半自動與全自動模式可切換，中文操作介面直接顯示拉力值；密碼鎖定設定，產線上沒人能隨意改參數。</p>
+    <ul class="mt-6 border-t border-neutral-300 text-[.95rem]">
+     <li class="flex justify-between py-3 border-b border-neutral-300"><span>操作模式</span><b>半自動 / 全自動</b></li>
+     <li class="flex justify-between py-3 border-b border-neutral-300"><span>介面</span><b>彩色觸控・中文化</b></li>
+     <li class="flex justify-between py-3 border-b border-neutral-300"><span>設定保護</span><b>密碼鎖定</b></li>
+    </ul>
+    <div class="mt-7 flex flex-wrap gap-3"><button class="btn btn-red press pdOpen" data-id="p328s">規格與下載</button><a href="#contact" class="btn btn-line press">詢價試機</a></div>
+   </div>
+  </div>
+ </div>
+
+ <!-- Signature: packing line draw -->
+ <div class="bg-ink text-white relative overflow-hidden">
+  <div class="max-w-wrap mx-auto px-5 py-24">
+   <div class="grid lg:grid-cols-12 gap-8 mb-14">
+    <h2 class="lg:col-span-6 text-3xl md:text-5xl font-black leading-tight" data-reveal>一條出貨線，<br>一個品牌負責到底。</h2>
+    <p class="lg:col-span-5 lg:col-start-8 text-neutral-300 leading-relaxed self-end" data-reveal>給物流中心與電商的包裝整合流水線：填充、摺蓋封箱、捆帶打包串成一條，設備出問題只要打一支電話。</p>
+   </div>
+   <div class="relative">
+    <svg class="hidden md:block absolute inset-x-0 top-[38px] w-full h-24 pointer-events-none" viewBox="0 0 1200 100" preserveAspectRatio="none" aria-hidden="true">
+     <path d="M20 10 H330 C380 10 380 90 430 90 H770 C820 90 820 10 870 10 H1180" fill="none" stroke="#e30613" stroke-width="4" stroke-linecap="round" data-draw vector-effect="non-scaling-stroke"/>
+    </svg>
+    <ol class="relative grid md:grid-cols-4 gap-10 md:gap-6">
+     <li data-reveal><div class="w-20 h-20 rounded-full bg-red grid place-items-center relative z-10"><i data-lucide="wind" class="w-8 h-8"></i></div><div class="mt-5 cond font-num text-sm text-red font-bold">STEP 1 · AP100</div><h3 class="text-xl font-bold mt-1">箱內填充氣墊</h3><p class="text-neutral-300 text-sm mt-2 leading-relaxed">桌上型緩衝氣墊機搭配自動收卷器，隨充即用，不佔倉儲空間。</p></li>
+     <li data-reveal class="md:mt-14"><div class="w-20 h-20 rounded-full bg-white text-ink grid place-items-center relative z-10"><i data-lucide="package" class="w-8 h-8"></i></div><div class="mt-5 cond font-num text-sm text-red font-bold">STEP 2 · FCS-55SDR</div><h3 class="text-xl font-bold mt-1">摺蓋＋封箱</h3><p class="text-neutral-300 text-sm mt-2 leading-relaxed">自動摺蓋封箱機，摺箱與封箱一氣呵成。</p></li>
+     <li data-reveal class="md:mt-14"><div class="w-20 h-20 rounded-full bg-white text-ink grid place-items-center relative z-10"><i data-lucide="link-2" class="w-8 h-8"></i></div><div class="mt-5 cond font-num text-sm text-red font-bold">STEP 3 · FSM-0860A</div><h3 class="text-xl font-bold mt-1">PP 帶捆包</h3><p class="text-neutral-300 text-sm mt-2 leading-relaxed">全自動 PP 帶捆包機打帶，牢固貨物再出貨。</p></li>
+     <li data-reveal><div class="w-20 h-20 rounded-full bg-red grid place-items-center relative z-10"><i data-lucide="truck" class="w-8 h-8"></i></div><div class="mt-5 cond font-num text-sm text-red font-bold">STEP 4 · SHIP</div><h3 class="text-xl font-bold mt-1">上棧板出貨</h3><p class="text-neutral-300 text-sm mt-2 leading-relaxed">搭配裹膜機與電動拖板車，整板出貨更穩。</p></li>
+    </ol>
+   </div>
+   <div class="mt-14 flex flex-wrap gap-3" data-reveal><a href="#cases" class="btn btn-red press">看流水線導入案例</a><button class="vbtn btn press border border-neutral-500 text-white" data-v="物流倉庫整合流水線"><i data-lucide="play" class="w-4 h-4"></i>流水線影片</button></div>
+  </div>
+ </div>
+
+ <!-- Best sellers: list with photo -->
+ <div class="bg-white">
+  <div class="max-w-wrap mx-auto px-5 py-20">
+   <div class="flex flex-wrap items-end justify-between gap-4 mb-10"><h2 class="text-3xl md:text-4xl font-black" data-reveal>現場最常被問的三台</h2><a href="#products" class="lnk font-bold inline-flex items-center gap-1">完整型錄 <i data-lucide="arrow-right" class="w-4 h-4"></i></a></div>
+   <div class="grid md:grid-cols-12 gap-6">
+    <article class="md:col-span-7 md:row-span-2 card-h rounded-xl overflow-hidden bg-paper flex flex-col" data-reveal>
+     <div class="overflow-hidden aspect-[16/10]"><img src="https://fromm-pack.com.tw/wp-content/uploads/2022/11/圖層-6.jpg" alt="自走式棧板裹膜機 FR3XX 系列繞行棧板" class="w-full h-full object-cover"></div>
+     <div class="p-7"><span class="label-tag text-red">最熱銷 · FR3XX</span><h3 class="text-2xl font-black mt-2">自走式裹膜機：走道只要 1.1M 寬</h3><p class="text-steel mt-3 leading-relaxed">適合棧板尺寸不一、打包站分散的倉庫。不受貨物大小與重量限制，電池充飽最多可裹包約 180 個棧板（視實際裹包情況而異）。</p><button class="pdOpen mt-5 btn btn-ink press" data-id="fr3xx">規格與影片</button></div>
+    </article>
+    <article class="md:col-span-5 card-h rounded-xl overflow-hidden bg-paper grid grid-cols-5" data-reveal>
+     <div class="col-span-2 overflow-hidden"><img src="https://fromm-pack.com.tw/wp-content/uploads/2022/12/緩衝.jpg" alt="AIRPAD 箱內緩衝氣墊" class="w-full h-full object-cover"></div>
+     <div class="col-span-3 p-5"><span class="label-tag text-red">AIRPAD</span><h3 class="font-black text-lg mt-1">箱內緩衝，自動計量填充</h3><p class="text-sm text-steel mt-2">不再靠人工判斷塞多少氣墊，少碰撞、也少浪費。</p><button class="pdOpen lnk mt-3 text-sm font-bold" data-id="ap50x">看規格 →</button></div>
+    </article>
+    <article class="md:col-span-5 card-h rounded-xl overflow-hidden bg-paper grid grid-cols-5" data-reveal>
+     <div class="col-span-2 overflow-hidden"><img src="https://fromm-pack.com.tw/wp-content/uploads/2022/12/塑鋼帶-PET帶-打包帶-1.jpg" alt="高性能 PET 塑鋼帶" class="w-full h-full object-cover"></div>
+     <div class="col-span-3 p-5"><span class="label-tag text-red">CONSUMABLE</span><h3 class="font-black text-lg mt-1">高性能 PET 塑鋼帶</h3><p class="text-sm text-steel mt-2">工廠認證耗材，搭配原裝打包機，運輸中不散包。</p><button class="pdOpen lnk mt-3 text-sm font-bold" data-id="pet">看尺寸 →</button></div>
+    </article>
+   </div>
+  </div>
+ </div>
+
+ <!-- Brand quote -->
+ <div class="bg-paper">
+  <div class="max-w-wrap mx-auto px-5 py-24 grid lg:grid-cols-12 gap-10 items-center">
+   <blockquote class="lg:col-span-8 text-2xl md:text-[2.2rem] font-bold leading-snug" data-reveal>「創立七十餘年，我們只做一件事：讓貨物在運輸與倉儲途中，<span class="text-red">不散、不撞、不浪費包材</span>。」</blockquote>
+   <div class="lg:col-span-4 text-steel leading-relaxed" data-reveal>瑞士 FROMM 富朗包裝集團持續研發手提式鋼帶／塑鋼帶打包機、全自動包裝系統、棧板裹膜機、緩衝氣墊機與封箱機。台中總公司與桃園、高雄分公司提供就近銷售與維修。<a href="#about" class="lnk block mt-4 font-bold text-ink">認識富朗 →</a></div>
+  </div>
+ </div>
+
+ <!-- CTA -->
+ <div class="bg-red text-white">
+  <div class="max-w-wrap mx-auto px-5 py-16 grid md:grid-cols-12 gap-8 items-center">
+   <h2 class="md:col-span-7 text-3xl md:text-4xl font-black leading-tight" data-reveal>帶您的貨來，<br>現場試打給您看。</h2>
+   <div class="md:col-span-5 flex flex-col gap-3" data-reveal>
+    <a href="tel:0800373777" class="btn bg-white text-red press justify-center text-lg font-num"><i data-lucide="phone" class="w-5 h-5"></i>全省服務熱線 0800-373777</a>
+    <a href="#contact" class="btn btn-ink press justify-center">填表預約試機</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section data-page="about" class="hidden">
+ <div class="bg-paper"><div class="max-w-wrap mx-auto px-5 pt-16 pb-12 grid lg:grid-cols-12 gap-8 items-end">
+  <h1 class="lg:col-span-7 text-4xl md:text-6xl font-black leading-tight" data-reveal>瑞士設計，<br>台灣就近服務。</h1>
+  <p class="lg:col-span-5 text-steel leading-relaxed" data-reveal>FROMM 富朗包裝集團創立至今七十餘年，專業設計與生產手提式打包機。台灣據點負責銷售、試機、安裝與保養維修。</p>
+ </div></div>
+ <div class="max-w-wrap mx-auto px-5 py-16 grid md:grid-cols-2 gap-10 items-center">
+  <img src="https://images.pexels.com/photos/34221997/pexels-photo-34221997.jpeg?auto=compress&cs=tinysrgb&w=1000" data-img="factory" data-w="1000" alt="包裝設備生產與組裝現場" loading="lazy" class="w-full aspect-[4/3] object-cover rounded-xl" data-wipe>
+  <div data-reveal>
+   <h2 class="text-2xl md:text-3xl font-black">我們做的產品</h2>
+   <ul class="mt-6 divide-y divide-neutral-300 border-y border-neutral-300">
+    <li class="py-3 flex gap-3"><i data-lucide="check" class="w-5 h-5 text-red shrink-0 mt-0.5"></i>氣動／電動手提式鋼帶、塑鋼帶打包機</li>
+    <li class="py-3 flex gap-3"><i data-lucide="check" class="w-5 h-5 text-red shrink-0 mt-0.5"></i>全自動鋼帶／塑鋼帶包裝系統</li>
+    <li class="py-3 flex gap-3"><i data-lucide="check" class="w-5 h-5 text-red shrink-0 mt-0.5"></i>膠膜棧板裹膜機、冷收縮膜</li>
+    <li class="py-3 flex gap-3"><i data-lucide="check" class="w-5 h-5 text-red shrink-0 mt-0.5"></i>緩衝氣墊製造機、紙墊機</li>
+    <li class="py-3 flex gap-3"><i data-lucide="check" class="w-5 h-5 text-red shrink-0 mt-0.5"></i>封箱機與全自動包裝流水線</li>
+   </ul>
+  </div>
+ </div>
+ <div class="bg-white"><div class="max-w-wrap mx-auto px-5 py-16 grid md:grid-cols-3 gap-10">
+  <div data-reveal><i data-lucide="shield-check" class="w-7 h-7 text-red"></i><h3 class="font-bold text-lg mt-3">原裝進口設備</h3><p class="text-steel mt-2 text-sm leading-relaxed">打包設備原裝進口，耗材經工廠認證，搭配使用更穩定。</p></div>
+  <div data-reveal><i data-lucide="map-pin" class="w-7 h-7 text-red"></i><h3 class="font-bold text-lg mt-3">北中南三個據點</h3><p class="text-steel mt-2 text-sm leading-relaxed">台中總公司、桃園與高雄分公司，試機與維修不必跑遠。</p></div>
+  <div data-reveal><i data-lucide="wrench" class="w-7 h-7 text-red"></i><h3 class="font-bold text-lg mt-3">專業保養維修</h3><p class="text-steel mt-2 text-sm leading-relaxed">買了之後才是開始，定期保養讓機器維持出廠狀態。<a href="#service" class="lnk font-bold text-ink">保養服務 →</a></p></div>
+ </div></div>
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+<section data-page="products" class="hidden">
+ <div class="bg-paper border-b border-neutral-200"><div class="max-w-wrap mx-auto px-5 pt-14 pb-8">
+  <h1 class="text-4xl md:text-5xl font-black" data-reveal>產品型錄</h1>
+  <p class="mt-3 text-steel max-w-2xl" data-reveal>選一個分類篩選；點進機型可看規格表、操作影片與型錄下載。</p>
+  <div class="mt-8 flex flex-wrap gap-2" id="catBar"></div>
+ </div></div>
+ <div class="max-w-wrap mx-auto px-5 py-12">
+  <div class="flex justify-between items-center mb-5 text-sm text-steel"><span id="pCount"></span><span>規格為示意，以原廠型錄為準</span></div>
+  <div id="pGrid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5"></div>
+ </div>
+ <!-- Compare table -->
+ <div class="bg-white"><div class="max-w-wrap mx-auto px-5 py-16">
+  <h2 class="text-2xl md:text-3xl font-black" data-reveal>電動打包機比一比</h2>
+  <p class="text-steel mt-2 text-sm" data-reveal>表格內容為示意，正式網站依原廠規格填入。</p>
+  <div class="mt-8 overflow-x-auto" data-reveal>
+   <table class="w-full min-w-[640px] text-left text-[.95rem]">
+    <thead><tr class="border-b-2 border-ink"><th class="py-3 pr-4">項目</th><th class="py-3 px-4">P318</th><th class="py-3 px-4">P328 / P329</th><th class="py-3 px-4 bg-red-lt text-red">P328S / P329S</th><th class="py-3 px-4">P331</th></tr></thead>
+    <tbody class="divide-y divide-neutral-200">
+     <tr><td class="py-3 pr-4 font-bold">適用帶寬</td><td class="px-4">13–16 mm</td><td class="px-4">16–19 mm</td><td class="px-4 bg-red-lt/50">16–19 mm</td><td class="px-4">25–32 mm</td></tr>
+     <tr><td class="py-3 pr-4 font-bold">操作介面</td><td class="px-4">按鍵</td><td class="px-4">按鍵</td><td class="px-4 bg-red-lt/50">彩色觸控・中文</td><td class="px-4">按鍵</td></tr>
+     <tr><td class="py-3 pr-4 font-bold">拉力顯示</td><td class="px-4">—</td><td class="px-4">—</td><td class="px-4 bg-red-lt/50"><i data-lucide="check" class="w-4 h-4 text-red"></i></td><td class="px-4">—</td></tr>
+     <tr><td class="py-3 pr-4 font-bold">密碼鎖定</td><td class="px-4">—</td><td class="px-4">—</td><td class="px-4 bg-red-lt/50"><i data-lucide="check" class="w-4 h-4 text-red"></i></td><td class="px-4">—</td></tr>
+     <tr><td class="py-3 pr-4 font-bold">半自動／全自動</td><td class="px-4"><i data-lucide="check" class="w-4 h-4"></i></td><td class="px-4"><i data-lucide="check" class="w-4 h-4"></i></td><td class="px-4 bg-red-lt/50"><i data-lucide="check" class="w-4 h-4 text-red"></i></td><td class="px-4"><i data-lucide="check" class="w-4 h-4"></i></td></tr>
+     <tr><td class="py-3 pr-4 font-bold">適合場景</td><td class="px-4">輕型貨物</td><td class="px-4">一般工業</td><td class="px-4 bg-red-lt/50">需管控拉力的產線</td><td class="px-4">重型貨物</td></tr>
+    </tbody>
+   </table>
+  </div>
+ </div></div>
+ <!-- Downloads -->
+ <div class="bg-paper"><div class="max-w-wrap mx-auto px-5 py-16 grid lg:grid-cols-12 gap-8">
+  <h2 class="lg:col-span-4 text-2xl md:text-3xl font-black" data-reveal>型錄與說明書下載</h2>
+  <ul class="lg:col-span-8 divide-y divide-neutral-300 border-y border-neutral-300" id="dlList"></ul>
+ </div></div>
+</section>
+
+<!-- ================= CASES ================= -->
+<section data-page="cases" class="hidden">
+ <div class="relative bg-ink text-white overflow-hidden">
+  <img src="https://images.pexels.com/photos/38195854/pexels-photo-38195854.jpeg?auto=compress&cs=tinysrgb&w=1600" data-img="warehouse" data-w="1600" alt="物流中心出貨區棧板與輸送線" loading="lazy" class="absolute inset-0 w-full h-full object-cover opacity-40">
+  <div class="relative max-w-wrap mx-auto px-5 py-24"><h1 class="text-4xl md:text-6xl font-black max-w-3xl leading-tight" data-reveal>導入案例：<br>從單站打包到整條流水線</h1><p class="mt-5 text-neutral-200 max-w-xl" data-reveal>以下為示意案例，正式網站將放入客戶授權的實際現場照片與影片。</p></div>
+ </div>
+ <div class="max-w-wrap mx-auto px-5 py-16 space-y-16" id="caseList"></div>
+</section>
+
+<!-- ================= NEWS ================= -->
+<section data-page="news" class="hidden">
+ <div class="max-w-wrap mx-auto px-5 pt-14 pb-20">
+  <h1 class="text-4xl md:text-5xl font-black" data-reveal>最新消息</h1>
+  <div class="mt-10 grid lg:grid-cols-12 gap-10">
+   <div class="lg:col-span-8 divide-y divide-neutral-300 border-y border-neutral-300" id="newsList"></div>
+   <aside class="lg:col-span-4 space-y-6" data-reveal>
+    <div class="bg-white rounded-xl p-6"><h3 class="font-bold">追蹤富朗</h3><p class="text-sm text-steel mt-2">新機上市與操作教學，會先發在 YouTube 頻道與粉絲專頁。</p><div class="mt-4 flex gap-2"><a class="btn btn-ink press text-sm" href="https://www.youtube.com/" target="_blank" rel="noopener"><i data-lucide="youtube" class="w-4 h-4"></i>YouTube</a><a class="btn btn-line press text-sm" href="https://www.facebook.com/" target="_blank" rel="noopener"><i data-lucide="facebook" class="w-4 h-4"></i>粉專</a></div></div>
+   </aside>
+  </div>
+ </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section data-page="faq" class="hidden">
+ <div class="max-w-wrap mx-auto px-5 pt-14 pb-20 grid lg:grid-cols-12 gap-10">
+  <div class="lg:col-span-4"><h1 class="text-4xl md:text-5xl font-black" data-reveal>常見問題</h1><p class="mt-4 text-steel" data-reveal>耗材尺寸、保固與維修最常被問，先整理在這裡。找不到答案請直接打 <a class="lnk font-bold text-ink font-num" href="tel:0800373777">0800-373777</a>。</p></div>
+  <div class="lg:col-span-8 border-t border-neutral-300" id="faqList"></div>
+ </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section data-page="contact" class="hidden">
+ <div class="max-w-wrap mx-auto px-5 pt-14 pb-20 grid lg:grid-cols-12 gap-12">
+  <div class="lg:col-span-5" data-reveal>
+   <h1 class="text-4xl md:text-5xl font-black leading-tight">詢價、試機，<br>一張表搞定。</h1>
+   <p class="mt-4 text-steel leading-relaxed">寫下想看的機型與貨物狀況，業務會在一個工作天內與您聯繫（示意）。急件請直接來電。</p>
+   <ul class="mt-8 space-y-4">
+    <li class="flex gap-3"><i data-lucide="phone" class="w-5 h-5 text-red mt-0.5"></i><div><div class="text-sm text-steel">全省服務熱線</div><a href="tel:0800373777" class="font-num font-bold text-2xl press">0800-373777</a></div></li>
+    <li class="flex gap-3"><i data-lucide="mail" class="w-5 h-5 text-red mt-0.5"></i><div><div class="text-sm text-steel">E-Mail</div><a href="mailto:infor.asia@fromm-pack.com" class="lnk font-bold">infor.asia@fromm-pack.com</a></div></li>
+    <li class="flex gap-3"><i data-lucide="map-pin" class="w-5 h-5 text-red mt-0.5"></i><div><div class="text-sm text-steel">台中總公司</div><div class="font-bold">428 台中市大雅區西村路3-41號</div></div></li>
+   </ul>
+  </div>
+  <form class="lg:col-span-7 bg-white rounded-xl p-6 md:p-8 grid sm:grid-cols-2 gap-4 jsform" data-reveal>
+   <label class="text-sm font-bold">公司名稱 <span class="text-red">*</span><input required class="mt-1.5" placeholder="例：某某物流股份有限公司"></label>
+   <label class="text-sm font-bold">聯絡人 <span class="text-red">*</span><input required class="mt-1.5" placeholder="王先生"></label>
+   <label class="text-sm font-bold">電話 <span class="text-red">*</span><input required type="tel" class="mt-1.5" placeholder="04-1234-5678"></label>
+   <label class="text-sm font-bold">E-Mail<input type="email" class="mt-1.5" placeholder="name@company.com"></label>
+   <label class="text-sm font-bold">需求類型<select class="mt-1.5"><option>詢價</option><option>預約試機</option><option>耗材訂購</option><option>維修保養</option></select></label>
+   <label class="text-sm font-bold">感興趣的產品<select class="mt-1.5" id="formCat"></select></label>
+   <label class="text-sm font-bold sm:col-span-2">貨物與現場狀況<textarea rows="4" class="mt-1.5" placeholder="例：每天約 200 箱，目前用 19mm PET 帶，想從手動換成電動"></textarea></label>
+   <div class="sm:col-span-2 flex flex-wrap items-center justify-between gap-3"><span class="text-xs text-steel"><span class="text-red">*</span> 為必填</span><button class="btn btn-red press">送出需求 <i data-lucide="send" class="w-4 h-4"></i></button></div>
+   <p class="ok hidden sm:col-span-2 bg-red-lt text-red-dk rounded-lg p-4 font-bold">已收到您的需求，業務會盡快與您聯繫。謝謝！</p>
+  </form>
+ </div>
+</section>
+
+<!-- ================= LOCATIONS ================= -->
+<section data-page="locations" class="hidden">
+ <div class="max-w-wrap mx-auto px-5 pt-14 pb-20">
+  <h1 class="text-4xl md:text-5xl font-black" data-reveal>全球據點</h1>
+  <p class="mt-3 text-steel max-w-2xl" data-reveal>瑞士 FROMM 集團在全球設有營運據點；台灣由以下三處提供銷售、試機與維修。</p>
+  <div class="mt-10 grid lg:grid-cols-12 gap-8">
+   <div class="lg:col-span-5 border-t border-neutral-300" id="locList"></div>
+   <div class="lg:col-span-7" data-reveal><iframe id="map" title="富朗包裝據點地圖" class="w-full h-[420px] rounded-xl border-0 bg-neutral-200" loading="lazy" src="https://www.google.com/maps?q=台中市大雅區西村路3-41號&output=embed"></iframe></div>
+  </div>
+  <div class="mt-16 bg-ink text-white rounded-xl p-8 grid md:grid-cols-2 gap-6 items-center" data-reveal>
+   <div><h2 class="text-2xl font-black">瑞士 FROMM 集團</h2><p class="text-neutral-300 mt-2 text-sm">歐洲、美洲與亞洲各地的據點資訊，正式網站將依集團官方資料列出（示意）。</p></div>
+   <div class="md:text-right"><a href="#contact" class="btn btn-red press">聯絡亞洲窗口</a></div>
+  </div>
+ </div>
+</section>
+
+<!-- ================= SHOP ================= -->
+<section data-page="shop" class="hidden">
+ <div class="max-w-wrap mx-auto px-5 py-20 grid md:grid-cols-2 gap-12 items-center">
+  <div data-reveal>
+   <h1 class="text-4xl md:text-5xl font-black leading-tight">耗材與小型設備，<br>線上直接買。</h1>
+   <p class="mt-4 text-steel leading-relaxed">PET 塑鋼帶、PP 帶、鐵扣、護角、OPP 膠帶與伸縮膜等常用耗材，可在線上購物拍賣網下單。大型設備請先預約試機。</p>
+   <div class="mt-8 flex flex-wrap gap-3"><a href="https://fromm-pack.com.tw/" target="_blank" rel="noopener" class="btn btn-flow press">前往線上購物 <i data-lucide="external-link" class="w-4 h-4"></i></a><a href="#products" class="btn btn-line press">先看耗材規格</a></div>
+   <p class="mt-4 text-xs text-steel">將另開新視窗前往外部購物平台。</p>
+  </div>
+  <div class="grid grid-cols-2 gap-4" data-reveal>
+   <img src="https://fromm-pack.com.tw/wp-content/uploads/2022/12/塑鋼帶-PET帶-打包帶-1.jpg" alt="PET 塑鋼帶捲" class="rounded-xl aspect-square object-cover">
+   <img src="https://fromm-pack.com.tw/wp-content/uploads/2022/12/OPP膠帶-小.jpg" alt="OPP 封箱膠帶" class="rounded-xl aspect-square object-cover mt-8">
+   <img src="https://fromm-pack.com.tw/wp-content/uploads/2022/12/工業用伸縮膜-小.jpg" alt="工業用伸縮膜" class="rounded-xl aspect-square object-cover">
+   <img src="https://fromm-pack.com.tw/wp-content/uploads/2022/12/緩衝.jpg" alt="緩衝氣墊耗材" class="rounded-xl aspect-square object-cover mt-8">
+  </div>
+ </div>
+</section>
+
+<!-- ================= SERVICE ================= -->
+<section data-page="service" class="hidden">
+ <div class="bg-paper"><div class="max-w-wrap mx-auto px-5 pt-14 pb-12 grid lg:grid-cols-12 gap-8 items-end">
+  <h1 class="lg:col-span-7 text-4xl md:text-6xl font-black leading-tight" data-reveal>機器停一天，<br>出貨就慢一天。</h1>
+  <p class="lg:col-span-5 text-steel leading-relaxed" data-reveal>富朗提供原廠保養與維修，北中南據點派員或送修皆可。以下是報修流程與保固說明。</p>
+ </div></div>
+ <div class="max-w-wrap mx-auto px-5 py-16">
+  <h2 class="text-2xl md:text-3xl font-black" data-reveal>報修流程</h2>
+  <ol class="mt-10 grid md:grid-cols-5 gap-6 relative">
+   <li data-reveal class="relative"><div class="font-num cond text-4xl font-black text-red">1</div><h3 class="font-bold mt-2">來電或填表</h3><p class="text-sm text-steel mt-1">告知機型、序號與故障狀況，有照片或影片更好。</p></li>
+   <li data-reveal><div class="font-num cond text-4xl font-black text-red">2</div><h3 class="font-bold mt-2">初步判斷</h3><p class="text-sm text-steel mt-1">技師電話或視訊協助，能現場排除的先排除。</p></li>
+   <li data-reveal><div class="font-num cond text-4xl font-black text-red">3</div><h3 class="font-bold mt-2">報價確認</h3><p class="text-sm text-steel mt-1">保固外維修先報價，同意後才施工。</p></li>
+   <li data-reveal><div class="font-num cond text-4xl font-black text-red">4</div><h3 class="font-bold mt-2">到府或送修</h3><p class="text-sm text-steel mt-1">依就近據點安排，可提供備用機（示意，依庫存）。</p></li>
+   <li data-reveal><div class="font-num cond text-4xl font-black text-red">5</div><h3 class="font-bold mt-2">測試交機</h3><p class="text-sm text-steel mt-1">實際打包測試，附維修紀錄。</p></li>
+  </ol>
+ </div>
+ <div class="bg-white"><div class="max-w-wrap mx-auto px-5 py-16 grid lg:grid-cols-2 gap-12">
+  <div data-reveal>
+   <h2 class="text-2xl md:text-3xl font-black">保養建議</h2>
+   <table class="mt-6 w-full text-left text-[.95rem]">
+    <thead><tr class="border-b-2 border-ink"><th class="py-3">項目</th><th class="py-3">建議頻率（示意）</th></tr></thead>
+    <tbody class="divide-y divide-neutral-200">
+     <tr><td class="py-3">清潔切刀與摩擦熔接區</td><td>每週</td></tr>
+     <tr><td class="py-3">檢查電池與充電座</td><td>每月</td></tr>
+     <tr><td class="py-3">氣動機型過濾器、給油</td><td>每月</td></tr>
+     <tr><td class="py-3">原廠全機檢測保養</td><td>每半年至一年</td></tr>
+    </tbody>
+   </table>
+  </div>
+  <form class="jsform bg-paper rounded-xl p-6 md:p-8 grid gap-4" data-reveal>
+   <h2 class="text-xl font-black">預約保養／報修</h2>
+   <label class="text-sm font-bold">機型 <span class="text-red">*</span><input required class="mt-1.5" placeholder="例：P328S"></label>
+   <label class="text-sm font-bold">聯絡電話 <span class="text-red">*</span><input required type="tel" class="mt-1.5" placeholder="0912-345-678"></label>
+   <label class="text-sm font-bold">就近據點<select class="mt-1.5"><option>台中總公司</option><option>桃園分公司</option><option>高雄分公司</option></select></label>
+   <label class="text-sm font-bold">狀況描述<textarea rows="3" class="mt-1.5" placeholder="例：熔接不牢、拉力不足"></textarea></label>
+   <button class="btn btn-red press justify-center"><i data-lucide="calendar-check" class="w-4 h-4"></i>送出預約</button>
+   <p class="ok hidden bg-red-lt text-red-dk rounded-lg p-4 font-bold">已收到預約，技師將與您聯繫排程。</p>
+  </form>
+ </div></div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-ink text-neutral-300">
+ <div class="strap h-2"></div>
+ <div class="max-w-wrap mx-auto px-5 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10 text-sm">
+  <div><img src="https://fromm-pack.com.tw/wp-content/uploads/2023/03/FROMM富朗中字-LOGO.png" alt="FROMM 富朗包裝" class="h-10 w-auto bg-white rounded p-1"><p class="mt-4 leading-relaxed">瑞士 FROMM 富朗包裝：打包機、裹膜機、緩衝氣墊機、封箱機與全自動包裝流水線。</p><a href="tel:0800373777" class="mt-4 inline-block font-num font-bold text-white text-xl">0800-373777</a><a href="mailto:infor.asia@fromm-pack.com" class="lnk block mt-1">infor.asia@fromm-pack.com</a></div>
+  <div><h4 class="text-white font-bold mb-3">台中總公司</h4><p class="leading-relaxed">428 台中市大雅區西村路3-41號<br>市話 04-2237-3777<br>傳真 04-2532-8566</p></div>
+  <div><h4 class="text-white font-bold mb-3">桃園分公司</h4><p class="leading-relaxed">327 桃園市新屋區中山東路一段602-2號<br>市話 03-497-0467<br>傳真 03-497-2481</p></div>
+  <div><h4 class="text-white font-bold mb-3">高雄分公司</h4><p class="leading-relaxed">833 高雄市鳥松區松竹街98-2號<br>市話 07-710-6528<br>傳真 07-790-4717</p></div>
+ </div>
+ <div class="border-t border-neutral-700"><div class="max-w-wrap mx-auto px-5 py-5 flex flex-wrap justify-between gap-3 text-xs text-neutral-400"><span>© <span id="yr"></span> FROMM 富朗包裝 All rights reserved.</span><span>design by Morcept</span></div></div>
+</footer>
+
+<!-- Product detail modal -->
+<div id="pdModal" class="modal" role="dialog" aria-modal="true" aria-label="產品詳情">
+ <div class="bg-white rounded-xl w-full max-w-5xl my-8 relative overflow-hidden" id="pdBox"></div>
+</div>
+<!-- Video modal -->
+<div id="vModal" class="modal" role="dialog" aria-modal="true" aria-label="影片">
+ <div class="w-full max-w-4xl my-auto relative">
+  <button class="vclose absolute -top-11 right-0 text-white p-2 press" aria-label="關閉影片"><i data-lucide="x"></i></button>
+  <div class="aspect-video bg-black rounded-xl grid place-items-center text-center text-white p-8">
+   <div><i data-lucide="play-circle" class="w-14 h-14 mx-auto text-red"></i><p id="vTitle" class="mt-4 text-xl font-bold"></p><p class="mt-2 text-neutral-400 text-sm">正式網站將於此嵌入 FROMM 官方 YouTube 操作影片（Elementor 影片燈箱）。</p></div>
+  </div>
+ </div>
+</div>
+<div id="toast" class="fixed left-1/2 -translate-x-1/2 bottom-6 z-[90] bg-ink text-white px-5 py-3 rounded-full text-sm hidden"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"></script>
+<script>
+const IMG='https://fromm-pack.com.tw/wp-content/uploads/';
+const PAGES=[['home','首頁'],['about','關於我們'],['products','產品介紹'],['cases','作品 / 案例'],['news','最新消息'],['faq','常見問題'],['contact','聯絡我們'],['locations','全球據點'],['shop','線上購物'],['service','維修保養服務']];
+const CATS=[['all','全部'],['strap','打包機系列'],['wrap','裹膜機系列'],['auto','全自動打包機'],['cushion','緩衝保護包裝'],['seal','膠帶封箱機'],['warehouse','倉儲及物流設備'],['consumable','耗材']];
+const CATSUB={strap:'塑鋼帶・鋼帶 電動／氣動／手動',wrap:'轉盤式・自走式・懸臂式・水平式',auto:'OMC 流水線・FA 系列',cushion:'氣墊機・紙墊機・送料系統',seal:'全自動・半自動・摺蓋封箱',warehouse:'電動拖板車・翻板機',consumable:'PET 帶・伸縮膜・膠帶・氣墊膜'};
+const P=[
+ {id:'p328s',cat:'strap',name:'塑鋼帶電動打包機 P328S',tag:'電動・彩色觸控',img:IMG+'2022/11/S-Series-8.jpg',desc:'耐用彩色觸控螢幕與密碼鎖定設定，中文化操作介面可顯示拉力值；可選半自動或全自動模式，捆紮多種工業應用，確保設定值不會被任意變動。',spec:[['適用帶材','PET / PP 塑鋼帶'],['帶寬','16–19 mm（示意）'],['動力','充電式電池'],['操作模式','半自動 / 全自動'],['介面','彩色觸控、中文']]},
+ {id:'p329s',cat:'strap',name:'塑鋼帶電動打包機 P329S',tag:'電動・彩色觸控',img:IMG+'2022/11/sv.jpg',desc:'P328S 的姊妹機型，同樣具備彩色觸控、拉力顯示與密碼鎖定，適合需要嚴格管控拉力的產線。',spec:[['適用帶材','PET / PP 塑鋼帶'],['帶寬','16–19 mm（示意）'],['動力','充電式電池'],['操作模式','半自動 / 全自動']]},
+ {id:'p318',cat:'strap',name:'塑鋼帶電動打包機 P318',tag:'電動',img:IMG+'2022/11/https_lh3.google.comu0pAF1QipNRAL4zYHSmOGFdcpOYSXhrWzquwdvWXrIi6Zjaw1280-h720.jpg',desc:'輕巧好握的手提式電動打包機，適合輕型貨物與高頻率打包。',spec:[['適用帶材','PET / PP 塑鋼帶'],['帶寬','13–16 mm（示意）'],['動力','充電式電池']]},
+ {id:'p331',cat:'strap',name:'塑鋼帶電動打包機 P331',tag:'電動・重型',img:IMG+'2022/11/https_lh3.google.comu0pAF1QipPM9BpYTWUnv0of0aRN3oEaCWBmqGrxnwLW0QRtw1280-h720.jpg',desc:'針對寬帶與重型貨物設計，讓塑鋼帶緊貼綑綁於貨物表面，運輸儲存不散落。',spec:[['適用帶材','PET 塑鋼帶'],['帶寬','25–32 mm（示意）'],['動力','充電式電池']]},
+ {id:'p380',cat:'strap',name:'塑鋼帶氣動打包機 P380',tag:'氣動',img:IMG+'2022/11/圖層-1.jpg',desc:'接上氣源即可連續作業，適合有空壓設備的工廠產線。',spec:[['適用帶材','PET 塑鋼帶'],['動力','壓縮空氣'],['帶寬','依型號（示意）']]},
+ {id:'steel',cat:'strap',name:'鋼帶手動打包機',tag:'鋼帶・手動',img:IMG+'2022/11/圖層-2.jpg',desc:'不需電力與氣源，鋼材、建材等重型貨物的可靠選擇。',spec:[['適用帶材','鋼帶'],['動力','手動'],['帶寬','依型號（示意）']]},
+ {id:'fr3xx',cat:'wrap',name:'自走式裹膜機 FR3XX 系列',tag:'自走式・最熱銷',img:IMG+'2022/11/圖層-6.jpg',desc:'適用棧板大小不同及多個打包站的客戶，繞行工作走道僅需 1.1M 寬，不受貨物大小與重量限制；電池充飽最多可裹包至約 180 個棧板（視實際裹包情況而異）。',spec:[['形式','自走式'],['工作走道','約 1.1 M'],['續航','最多約 180 棧板 / 充電'],['棧板尺寸','不限']]},
+ {id:'turn',cat:'wrap',name:'轉盤式棧板裹膜機',tag:'轉盤式',img:IMG+'2022/11/圖層-7.jpg',desc:'固定站點使用，棧板置於轉盤自動纏繞，裹包均勻。',spec:[['形式','轉盤式'],['棧板尺寸','100×100 – 120×120 cm（示意）']]},
+ {id:'fsm',cat:'auto',name:'全自動 PP 帶捆包機 FSM-0860A',tag:'全自動',img:IMG+'2022/11/cx.jpg',desc:'可串接摺蓋封箱機，箱子進來自動打帶，牢固貨物、節省人力。',spec:[['帶材','PP 帶'],['形式','全自動'],['可串接','封箱機 / 輸送線']]},
+ {id:'ap50x',cat:'cushion',name:'AP50X 工業級緩衝氣墊機',tag:'緩衝氣墊',img:IMG+'2022/12/緩衝.jpg',desc:'生產氣墊、氣泡布用於箱內填充、纏繞與固定，降低包裝成本、節省倉庫空間。',spec:[['產出','氣墊 / 氣泡布'],['用途','箱內填充、纏繞'],['適用','電商、物流、零售']]},
+ {id:'ap100',cat:'cushion',name:'桌上型緩衝氣墊機 AP100',tag:'桌上型',img:IMG+'2022/11/20119139-轉換-01.png',desc:'搭配自動收卷器，隨充即用不佔倉儲空間，是出貨流水線的第一站。',spec:[['形式','桌上型'],['搭配','自動收卷器']]},
+ {id:'fcs',cat:'seal',name:'自動摺蓋封箱機 FCS-55SDR',tag:'摺蓋封箱',img:IMG+'2022/11/18237518-轉換-04-1.png',desc:'摺箱＋封箱一氣呵成，適合電商與物流中心高量出貨。',spec:[['形式','自動摺蓋'],['膠帶','OPP 膠帶']]},
+ {id:'truck',cat:'warehouse',name:'電動拖板車',tag:'倉儲',img:IMG+'2022/11/20119139-轉換-02.png',desc:'倉內搬運棧板省力，搭配裹膜機整板出貨。',spec:[['動力','電動'],['用途','棧板搬運']]},
+ {id:'pet',cat:'consumable',name:'高性能 PET 塑鋼帶',tag:'耗材',img:IMG+'2022/12/塑鋼帶-PET帶-打包帶-1.jpg',desc:'經工廠認證，品質優良、價格實惠，搭配原裝進口打包設備，防止運輸散包。',spec:[['寬度','16 / 19 / 25 / 32 mm'],['材質','PET']]},
+ {id:'film',cat:'consumable',name:'工業用伸縮膜',tag:'耗材',img:IMG+'2022/12/工業用伸縮膜-小.jpg',desc:'棧板裹膜用伸縮膜，搭配富朗裹膜機使用。',spec:[['用途','棧板裹包'],['規格','依機型（示意）']]},
+ {id:'opp',cat:'consumable',name:'OPP 封箱膠帶',tag:'耗材',img:IMG+'2022/12/OPP膠帶-小.jpg',desc:'封箱機與手動封箱皆適用。',spec:[['材質','OPP'],['規格','依需求（示意）']]}
+];
+const CASES=[
+ {t:'電商物流中心：出貨線整合',k:'物流中心（示意）',img:'logistics',d:'原本人工填充、手封箱、人工打帶，三道工序三種廠牌。導入 AP100 + FCS-55SDR + FSM-0860A 後，換成同一條線、同一個保養窗口。',s:['現場勘查動線','規劃三站流水線','試機與教育訓練','定期保養']},
+ {t:'金屬加工廠：鋼捲出貨打包',k:'工廠（示意）',img:'factory',d:'重型鋼捲以手動鋼帶打包，工時長、拉力不一。改用電動塑鋼帶打包機，拉力可顯示並以密碼鎖定，品管更好追。',s:['評估帶材','現場試打','導入 P331','人員訓練']},
+ {t:'多倉配送：自走式裹膜',k:'倉儲（示意）',img:'warehouse',d:'棧板尺寸不一、打包站散在各倉。FR3XX 自走式裹膜機直接走到棧板旁裹膜，走道只需約 1.1M。',s:['盤點棧板尺寸','確認走道寬度','FR3XX 試用','正式導入']}
+];
+const NEWS=[
+ {d:'2025-06-12',c:'新品',t:'彩色觸控螢幕電動打包機 P328S / P329S 上市',x:'中文化介面、拉力值顯示與密碼鎖定，產線設定不再被任意變動。'},
+ {d:'2025-04-03',c:'應用',t:'如何妥善保護箱內產品？AIRPAD 箱內緩衝自動計量',x:'告別人工判斷塞多少氣墊：少碰撞、少浪費、出貨更快。'},
+ {d:'2025-02-18',c:'方案',t:'物流倉庫的包裝整合流水線怎麼排？',x:'填充、摺蓋封箱、捆帶打包串成一條線的規劃重點。'},
+ {d:'2024-12-05',c:'保養',t:'電動打包機年底保養檢查清單',x:'切刀、熔接區、電池三個地方，決定明年用得順不順。'}
+];
+const FAQ=[
+ ['我目前的塑鋼帶是哪個尺寸？可以用哪台機器？','常見寬度有 16、19、25、32 mm。量一下帶寬與厚度，或拍照傳 LINE 給我們，業務會推薦相容機型。'],
+ ['PET 塑鋼帶和 PP 帶差在哪？','PET 塑鋼帶強度高、延伸率低，適合重物與長途運輸；PP 帶較經濟，適合輕型箱件。可依貨物重量與運輸方式選擇。'],
+ ['可以先試機再購買嗎？','可以。台中、桃園、高雄據點皆可預約試機，也可安排帶機到現場以您的貨物實際打包。'],
+ ['保固多久？保固涵蓋哪些？','保固期間與範圍依機型與合約約定，購買時會於報價單上載明。耗材與人為損壞通常不在保固範圍。'],
+ ['機器故障怎麼報修？會很久嗎？','撥打 0800-373777 或填寫維修保養表單，技師先協助判斷，再安排就近據點到府或送修。'],
+ ['耗材一定要用富朗的嗎？','建議使用經工廠認證的原廠耗材，搭配原裝設備穩定性最好，也較不影響機器壽命。'],
+ ['裹膜機要怎麼選？','先看棧板尺寸、每天棧板數量與現場空間：固定站點選轉盤式，多站點選自走式，高量產線可考慮全自動。']
+];
+const DL=[['FROMM 打包機系列型錄','PDF · 示意'],['P328S / P329S 操作說明書','PDF · 示意'],['FR3XX 自走式裹膜機型錄','PDF · 示意'],['緩衝氣墊機系列型錄','PDF · 示意'],['耗材尺寸對照表','PDF · 示意']];
+const LOCS=[['台中總公司','428 台中市大雅區西村路3-41號','04-2237-3777','04-2532-8566'],['桃園分公司','327 桃園市新屋區中山東路一段602-2號','03-497-0467','03-497-2481'],['高雄分公司','833 高雄市鳥松區松竹街98-2號','07-710-6528','07-790-4717']];
+
+const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
+const ic=()=>window.lucide&&lucide.createIcons();
+function toast(m){const t=$('#toast');t.textContent=m;t.classList.remove('hidden');clearTimeout(t._);t._=setTimeout(()=>t.classList.add('hidden'),2200)}
+$('#yr').textContent=new Date().getFullYear();
+
+// Nav
+$('#nav').innerHTML=PAGES.map(([k,n])=>`<a href="#${k}" class="nav-a" data-nav="${k}">${n}</a>`).join('');
+$('#mnavIn').innerHTML=PAGES.map(([k,n])=>`<a href="#${k}" class="nav-a py-2.5" data-nav="${k}">${n}</a>`).join('');
+$('#burger').onclick=()=>{const m=$('#mnav');m.classList.toggle('hidden');$('#burger').innerHTML=`<i data-lucide="${m.classList.contains('hidden')?'menu':'x'}"></i>`;ic()};
+
+// Hero index
+$('#heroIndex').innerHTML=CATS.slice(1).map(([k,n],i)=>`<li><a href="#products?cat=${k}" class="row-h flex items-center gap-4 px-5 py-3.5 transition-colors"><span class="cond font-num font-black text-red w-6">${String.fromCharCode(65+i)}</span><span class="flex-1"><span class="font-bold block">${n}</span><span class="text-xs text-steel">${CATSUB[k]}</span></span><span class="text-xs font-num text-steel">${P.filter(p=>p.cat===k).length} 款</span><i data-lucide="arrow-right" class="arr w-4 h-4"></i></a></li>`).join('');
+
+// Typing
+(function(){const w=['P328S 彩色觸控電動打包機','FR3XX 自走式裹膜機','AIRPAD 箱內緩衝自動填充'],el=$('#typing');let i=0,j=0,del=false;
+ if(matchMedia('(prefers-reduced-motion: reduce)').matches){el.textContent=w[0];return}
+ (function tick(){const s=w[i];el.textContent=s.slice(0,j);if(!del&&j<s.length)j++;else if(del&&j>0)j--;else if(!del){del=true;return setTimeout(tick,1600)}else{del=false;i=(i+1)%w.length}setTimeout(tick,del?40:90)})();})();
+
+// Finder
+$$('#ftabs .tab').forEach(b=>b.onclick=()=>{$$('#ftabs .tab').forEach(x=>x.classList.toggle('on',x===b));$$('.fpanel').forEach(p=>p.classList.toggle('hidden',p.dataset.p!==b.dataset.t));$('#fres').textContent=''});
+$$('.chips').forEach(g=>g.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{g.querySelectorAll('.chip').forEach(x=>x.classList.remove('on'));c.classList.add('on')}));
+$('#fgo').onclick=()=>{const t=$('#ftabs .tab.on').dataset.t;const map=[['strap','P328S、P329S、P318'],['wrap','FR3XX 自走式、轉盤式'],['cushion','AP50X、AP100']][t];$('#fres').innerHTML=`建議：<b class="text-ink">${map[1]}</b>　<a href="#products?cat=${map[0]}" class="lnk font-bold text-red">看這些機型 →</a>`};
+
+// Products
+let curCat='all';
+$('#catBar').innerHTML=CATS.map(([k,n])=>`<button class="chip press" data-cat="${k}">${n}</button>`).join('');
+$('#formCat').innerHTML=CATS.slice(1).map(c=>`<option>${c[1]}</option>`).join('');
+function renderP(){
+ $$('#catBar .chip').forEach(c=>c.classList.toggle('on',c.dataset.cat===curCat));
+ const list=P.filter(p=>curCat==='all'||p.cat===curCat);
+ $('#pCount').textContent=`共 ${list.length} 款`;
+ $('#pGrid').innerHTML=list.map(p=>`<article class="card-h bg-white rounded-xl overflow-hidden flex flex-col"><button class="pdOpen text-left flex flex-col flex-1 press" data-id="${p.id}"><div class="overflow-hidden aspect-[4/3] bg-paper"><img src="${p.img}" alt="${p.name}" class="w-full h-full object-cover" loading="lazy"></div><div class="p-5 flex-1"><span class="label-tag text-red">${p.tag}</span><h3 class="font-bold mt-1.5 leading-snug">${p.name}</h3></div></button><div class="px-5 pb-5 flex gap-3 text-sm"><button class="pdOpen lnk font-bold" data-id="${p.id}">規格</button><span class="text-neutral-300">|</span><a href="#contact" class="lnk font-bold text-red">詢價試機</a></div></article>`).join('');
+ if(window.gsap&&!reduce)gsap.from('#pGrid article',{y:20,opacity:0,duration:.5,stagger:.05,ease:'power3.out'});
+}
+$('#catBar').onclick=e=>{const b=e.target.closest('[data-cat]');if(b){curCat=b.dataset.cat;renderP()}};
+$('#dlList').innerHTML=DL.map(([n,m])=>`<li><button class="dl row-h w-full flex items-center gap-4 py-4 px-2 text-left transition-colors press"><i data-lucide="file-text" class="w-5 h-5 text-red"></i><span class="flex-1 font-bold">${n}</span><span class="text-xs text-steel font-num">${m}</span><i data-lucide="download" class="arr w-4 h-4"></i></button></li>`).join('');
+document.addEventListener('click',e=>{if(e.target.closest('.dl'))toast('示意：正式網站將下載 PDF 檔案')});
+
+// Product modal
+function openPD(id){const p=P.find(x=>x.id===id);if(!p)return;
+ $('#pdBox').innerHTML=`<button class="pdClose absolute top-3 right-3 z-10 w-10 h-10 rounded-full bg-white grid place-items-center press" aria-label="關閉"><i data-lucide="x"></i></button>
+ <div class="grid md:grid-cols-2">
+  <div class="bg-paper p-6"><img src="${p.img}" alt="${p.name}" class="w-full aspect-square object-cover rounded-lg"><button class="vbtn mt-4 btn btn-ink press w-full justify-center" data-v="${p.name} 操作示範"><i data-lucide="play" class="w-4 h-4"></i>看操作影片</button></div>
+  <div class="p-6 md:p-8"><span class="label-tag text-red">${CATS.find(c=>c[0]===p.cat)[1]} · ${p.tag}</span><h2 class="text-2xl font-black mt-2">${p.name}</h2><p class="text-steel mt-3 leading-relaxed">${p.desc}</p>
+  <h3 class="font-bold mt-6 mb-2">規格表</h3><table class="w-full text-sm"><tbody class="divide-y divide-neutral-200 border-y border-neutral-200">${p.spec.map(s=>`<tr><td class="py-2.5 pr-4 text-steel w-2/5">${s[0]}</td><td class="py-2.5 font-bold">${s[1]}</td></tr>`).join('')}</tbody></table>
+  <p class="text-xs text-steel mt-2">規格為示意，以原廠型錄為準。</p>
+  <div class="mt-5 flex flex-wrap gap-2"><button class="dl btn btn-line press text-sm"><i data-lucide="download" class="w-4 h-4"></i>型錄 PDF</button><button class="dl btn btn-line press text-sm"><i data-lucide="file-text" class="w-4 h-4"></i>說明書</button></div>
+  <div class="mt-6 pt-6 border-t border-neutral-200 flex flex-wrap gap-3"><a href="#contact" class="pdGo btn btn-red press">詢價試機</a><a href="tel:0800373777" class="btn btn-ink press font-num"><i data-lucide="phone" class="w-4 h-4"></i>0800-373777</a></div></div>
+ </div>`;
+ $('#pdModal').classList.add('show');ic();window.__lenis&&__lenis.stop();
+}
+function closeM(){$$('.modal').forEach(m=>m.classList.remove('show'));window.__lenis&&__lenis.start()}
+document.addEventListener('click',e=>{
+ const o=e.target.closest('.pdOpen');if(o){openPD(o.dataset.id);return}
+ if(e.target.closest('.pdClose')||e.target.classList.contains('modal')||e.target.closest('.vclose')||e.target.closest('.pdGo')){closeM()}
+ const v=e.target.closest('.vbtn');if(v){$('#vTitle').textContent=v.dataset.v;$('#vModal').classList.add('show');window.__lenis&&__lenis.stop()}
+ const sc=e.target.closest('[data-scroll]');if(sc){e.preventDefault();const t=document.getElementById(sc.dataset.scroll);window.__lenis?__lenis.scrollTo(t,{offset:-70}):t.scrollIntoView({behavior:'smooth'})}
+ const sh=e.target.closest('[data-share]');if(sh){const u=encodeURIComponent(location.href),k=sh.dataset.share;const m={fb:'https://www.facebook.com/sharer/sharer.php?u='+u,line:'https://social-plugins.line.me/lineit/share?url='+u,tw:'https://twitter.com/intent/tweet?url='+u};if(m[k])window.open(m[k],'_blank','noopener');else toast('請用微信掃描文章 QR Code 分享（示意）')}
+});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeM()});
+
+// Cases
+$('#caseList').innerHTML=CASES.map((c,i)=>`<article class="grid md:grid-cols-12 gap-8 items-center">
+ <div class="md:col-span-6 ${i%2?'md:order-2':''}"><img data-img="${c.img}" data-w="1000" alt="${c.t} 現場示意" loading="lazy" class="w-full aspect-[4/3] object-cover rounded-xl" data-wipe="${i%2?'right':'left'}"></div>
+ <div class="md:col-span-6" data-reveal><span class="label-tag text-red">${c.k}</span><h2 class="text-2xl md:text-3xl font-black mt-2">${c.t}</h2><p class="text-steel mt-3 leading-relaxed">${c.d}</p>
+ <ol class="mt-6 flex flex-wrap gap-y-3 items-center text-sm">${c.s.map((s,j)=>`<li class="flex items-center"><span class="w-7 h-7 rounded-full bg-ink text-white grid place-items-center font-num text-xs font-bold mr-2">${j+1}</span><span class="font-bold">${s}</span>${j<c.s.length-1?'<span class="w-6 h-px bg-neutral-400 mx-3"></span>':''}</li>`).join('')}</ol>
+ <div class="mt-6 flex gap-3"><button class="vbtn btn btn-ink press text-sm" data-v="${c.t}"><i data-lucide="play" class="w-4 h-4"></i>案例影片</button><a href="#contact" class="btn btn-line press text-sm">我也想導入</a></div></div></article>`).join('');
+
+// News
+$('#newsList').innerHTML=NEWS.map(n=>`<article class="py-7 grid sm:grid-cols-[120px_1fr] gap-3" data-reveal><div class="font-num text-sm text-steel">${n.d}<span class="block mt-1 label-tag text-red">${n.c}</span></div><div><h2 class="text-xl font-bold leading-snug">${n.t}</h2><p class="text-steel mt-2">${n.x}</p><div class="mt-4 flex flex-wrap items-center gap-2 text-sm"><span class="text-steel mr-1">分享：</span><button class="press chip" data-share="fb">Facebook</button><button class="press chip" data-share="line">LINE</button><button class="press chip" data-share="tw">X</button><button class="press chip" data-share="wx">微信</button></div></div></article>`).join('');
+
+// FAQ
+$('#faqList').innerHTML=FAQ.map(([q,a])=>`<div class="acc border-b border-neutral-300"><button class="acc-h press w-full flex items-center justify-between gap-4 py-5 text-left font-bold text-lg"><span>${q}</span><i data-lucide="plus" class="acc-i w-5 h-5 shrink-0"></i></button><div class="acc-b"><div class="overflow-hidden"><p class="pb-5 text-steel leading-relaxed">${a}</p></div></div></div>`).join('');
+$('#faqList').onclick=e=>{const h=e.target.closest('.acc-h');if(h)h.parentElement.classList.toggle('open')};
+
+// Locations
+$('#locList').innerHTML=LOCS.map(([n,a,t,f],i)=>`<button class="loc row-h w-full text-left py-5 px-2 border-b border-neutral-300 transition-colors press" data-q="${a}"><div class="flex items-center justify-between"><h2 class="font-black text-lg">${n}</h2><i data-lucide="map-pin" class="arr w-4 h-4 ${i?'':'text-red'}"></i></div><p class="mt-1 text-sm">${a}</p><p class="mt-1 text-sm text-steel font-num">市話 ${t}　傳真 ${f}</p></button>`).join('');
+$('#locList').onclick=e=>{const b=e.target.closest('.loc');if(!b)return;$('#map').src='https://www.google.com/maps?q='+encodeURIComponent(b.dataset.q)+'&output=embed';$$('#locList .loc i').forEach(x=>x.classList.remove('text-red'));b.querySelector('i').classList.add('text-red')};
+
+// Forms
+$$('.jsform').forEach(f=>f.addEventListener('submit',e=>{e.preventDefault();f.querySelector('.ok').classList.remove('hidden');f.querySelectorAll('input,textarea').forEach(i=>i.value='');toast('已送出（示意）')}));
+
+// Header shrink
+addEventListener('scroll',()=>$('#hdr').classList.toggle('small',scrollY>40),{passive:true});
+
+// Motion
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(window.gsap){gsap.registerPlugin(ScrollTrigger);
+ if(window.Lenis&&!reduce){const lenis=new Lenis({lerp:0.1});lenis.on('scroll',ScrollTrigger.update);gsap.ticker.add(t=>lenis.raf(t*1000));gsap.ticker.lagSmoothing(0);window.__lenis=lenis}}
+let ctx;
+function initMotion(scope){
+ ctx&&ctx.revert();if(reduce||!window.gsap)return;
+ ctx=gsap.context(()=>{
+  if(scope.dataset.page==='home'){
+   const tl=gsap.timeline({defaults:{ease:'power3.out'}});
+   tl.from('.hero-strap',{scaleX:0,transformOrigin:'left',duration:.6})
+     .from('.hero-h .block',{yPercent:60,opacity:0,duration:.7,stagger:.08},'<.05')
+     .from('.hero-p',{y:20,opacity:0,duration:.5,stagger:.06},'<.25')
+     .from('#heroIndex li',{x:24,opacity:0,duration:.45,stagger:.04},'<');
+  }
+  scope.querySelectorAll('[data-reveal]').forEach(el=>gsap.from(el,{y:32,opacity:0,duration:.9,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%'}}));
+  scope.querySelectorAll('[data-wipe]').forEach(el=>gsap.fromTo(el,{clipPath:el.dataset.wipe==='right'?'inset(0 0 0 100%)':'inset(0 100% 0 0)'},{clipPath:'inset(0 0% 0 0%)',duration:1.1,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 85%'}}));
+  scope.querySelectorAll('[data-draw]').forEach(p=>{const len=p.getTotalLength();gsap.set(p,{strokeDasharray:len,strokeDashoffset:len});gsap.to(p,{strokeDashoffset:0,ease:'none',scrollTrigger:{trigger:p.closest('.relative')||p,start:'top 75%',end:'bottom 55%',scrub:true}})});
+ },scope);
+ requestAnimationFrame(()=>ScrollTrigger.refresh());
+}
+
+// Router
+function route(){
+ let h=location.hash.slice(1)||'home';const [pg,q]=h.split('?');const page=PAGES.some(p=>p[0]===pg)?pg:'home';
+ if(page==='products'){const m=(q||'').match(/cat=(\w+)/);curCat=m?m[1]:'all';renderP()}
+ $$('[data-page]').forEach(s=>s.classList.toggle('hidden',s.dataset.page!==page));
+ $$('[data-nav]').forEach(a=>a.classList.toggle('on',a.dataset.nav===page));
+ $('#mnav').classList.add('hidden');$('#burger').innerHTML='<i data-lucide="menu"></i>';
+ window.__lenis?__lenis.scrollTo(0,{immediate:true}):scrollTo(0,0);
+ ic();initMotion($(`[data-page="${page}"]`));
+}
+addEventListener('hashchange',route);
+route();
+</script>
+<div style="position:fixed;left:12px;bottom:12px;z-index:2147483000;background:rgba(17,17,17,.82);color:#fff;font:12px/1.4 system-ui,sans-serif;padding:6px 11px;border-radius:999px;pointer-events:none">Demo 示意・Morcept Design</div></body>
+</html>
